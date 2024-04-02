@@ -10,7 +10,8 @@ docker run \
   $DOCKER_IMAGE \
   emcc -O3 -s WASM=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["cwrap"]' -s MODULARIZE=1 \
         -s NODEJS_CATCH_EXIT=0 -s NODEJS_CATCH_REJECTION=0 \
-        -I lib/ghostrider/ghostrider.c \
+        -I lib/ghostrider/bindings.c \
+        lib/ghostrider/ghostrider.c \
         lib/ghostrider/utils/aes_helper.c \
         lib/ghostrider/utils/extra.c \
         lib/ghostrider/utils/gost_streebog.c \
