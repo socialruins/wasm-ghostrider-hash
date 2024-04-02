@@ -59,4 +59,4 @@ WASM_BUILD_BASE_64=$(base64 lib/wasm-build/ghostrider-hash.wasm)
 # Produce JS file with the wasm build base64 instead
 echo 'module.exports = "'${WASM_BUILD_BASE_64}'"' > lib/wasm-build/ghostrider-hash-wasm-base64.js
 
-# rm lib/wasm-build/ghostrider-hash.wasm
+rm lib/wasm-build/ghostrider-hash.wasm
