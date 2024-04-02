@@ -1,0 +1,44 @@
+{
+  "name": "wasm-ghostrider-hash",
+  "version": "0.0.2",
+  "description": "WASM JS binding for GR hashing algorithm",
+  "main": "lib/ghostrider.js",
+  "scripts": {
+    "build": "scripts/build.sh",
+    "lint": "eslint .",
+    "test": "npm run test:mocha && npm run test:browsers",
+    "test:mocha": "mocha 'test/**/*.spec.js'",
+    "test:browsers": "karma start karma.conf.js --single-run",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/socialruins/wasm-ghostrider-hash.git"
+  },
+  "keywords": [
+    "ghostrider",
+    "raptoreum",
+    "hash",
+    "256",
+    "crypto",
+    "cryptocurrency"
+  ],
+  "author": {
+    "name": "socialruins"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/socialruins/wasm-ghostrider-hash/issues"
+  },
+  "homepage": "https://github.com/socialruins/wasm-ghostrider-hash#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "karma": "^6.4.0",
+    "karma-browserify": "^8.1.0",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-mocha": "^2.0.1",
+    "mocha": "^10.0.0"
+  }
+}

@@ -1,0 +1,8 @@
+.idea
+.github
+node_modules
+scripts
+
+# Do not publish C code
+lib/ghostrider
+lib/sha256d
